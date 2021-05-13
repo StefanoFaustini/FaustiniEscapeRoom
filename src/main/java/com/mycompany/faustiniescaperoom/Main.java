@@ -11,5 +11,8 @@ package com.mycompany.faustiniescaperoom;
  */
 public class Main {
     
-    
+    public static void main(String[] args) {
+        
+        
+    }
 }
