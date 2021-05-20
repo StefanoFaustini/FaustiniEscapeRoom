@@ -3,17 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.faustiniescaperoom;
+package com.mycompany.fineanno;
 
 /**
  *
- * @author STUDENTE
+ * @author work
  */
-public class Main {
+public class EscapeRoom {
     
-    public static void main(String[] args) {
-        
-      
-  
-    }
+    
+    
 }

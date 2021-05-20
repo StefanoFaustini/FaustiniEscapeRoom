@@ -3,30 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.faustiniescaperoom;
+package com.mycompany.fineanno;
 
 import java.time.LocalDateTime;
 
 /**
  *
- * @author STUDENTE
+ * @author work
  */
-public class Stanze {
+public class Accesso {
     
     private String nome;
     private String cognome;
     private int codiceFiscale;
     LocalDateTime dataAccesso;
     LocalDateTime dataUscita;
-    private final int i=3;
-    private int numeroAccessi;
-   
-   
-   
-    Stanze [] stanze = new Stanze[i];
-   
-
-    public Stanze(String nome, String cognome, int codiceFiscale, LocalDateTime dataAccesso, LocalDateTime dataUscita)
+ 
+    public Accesso(String nome, String cognome, int codiceFiscale, LocalDateTime dataAccesso, LocalDateTime dataUscita) 
     {
         this.nome = nome;
         this.cognome = cognome;
@@ -34,18 +27,16 @@ public class Stanze {
         this.dataAccesso = dataAccesso;
         this.dataUscita = dataUscita;
     }
-   
-   
-    public Stanze(Stanze s)
+    
+    public Accesso(String nome, String cognome, int codiceFiscale, LocalDateTime dataAccesso) 
     {
-        this.nome=s.nome;
-        this.cognome=s.cognome;
-        this.codiceFiscale=s.codiceFiscale;
-        this.dataAccesso=s.dataAccesso;
-        this.dataUscita=s.dataUscita;
+        this.nome = nome;
+        this.cognome = cognome;
+        this.codiceFiscale = codiceFiscale;
+        this.dataAccesso = dataAccesso;
+        
     }
-   
-
+    
     public String getNome() {
         return nome;
     }
@@ -66,10 +57,6 @@ public class Stanze {
         return dataUscita;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public void setCognome(String cognome) {
         this.cognome = cognome;
     }
@@ -85,29 +72,7 @@ public class Stanze {
     public void setDataUscita(LocalDateTime dataUscita) {
         this.dataUscita = dataUscita;
     }
-   
-   
-    public String toString()
-    {
-        String s="";
-       
-        System.out.println("");
-       
-        return s;
-       
-    }
-   
-    private void registraAccessi(String nome, String cognome, int codiceFiscale, LocalDateTime dataAccesso)
-    {
-        int numeroAccessi=0;
-       
-        for (int j=0; j<i; j++)
-        {
-            numeroAccessi++;
-           
-        }
-    }
     
     
-    
+
 }
