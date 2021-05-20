@@ -34,7 +34,15 @@ public class Accesso {
         this.cognome = cognome;
         this.codiceFiscale = codiceFiscale;
         this.dataAccesso = dataAccesso;
-        
+    }
+    
+    public Accesso(Accesso a1)
+    {
+        this.nome= a1.getNome();
+        this.cognome= a1.getCognome();
+        this.codiceFiscale= a1.getCodiceFiscale();
+        this.dataAccesso= a1.getDataAccesso();
+        this.dataUscita= a1.getDataUscita();
     }
     
     public String getNome() {
@@ -72,6 +80,8 @@ public class Accesso {
     public void setDataUscita(LocalDateTime dataUscita) {
         this.dataUscita = dataUscita;
     }
+    
+    
     
     
 
