@@ -45,6 +45,18 @@ public class Accesso {
         this.dataUscita= a1.getDataUscita();
     }
     
+    public Accesso()
+    {
+        this.codiceFiscale=0;
+        this.nome="";
+        this.cognome="";
+        this.dataAccesso= LocalDateTime.now();
+        this.dataUscita= LocalDateTime.now();
+        
+    }
+    
+   
+            
     public String getNome() {
         return nome;
     }
@@ -65,6 +77,10 @@ public class Accesso {
         return dataUscita;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public void setCognome(String cognome) {
         this.cognome = cognome;
     }
@@ -80,6 +96,8 @@ public class Accesso {
     public void setDataUscita(LocalDateTime dataUscita) {
         this.dataUscita = dataUscita;
     }
+
+    
     
     
     
